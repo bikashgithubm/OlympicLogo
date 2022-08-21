@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olympic</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(182, 245, 231);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cir1{
+            border: 15px solid blue;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 150px;
+            left: 450px;
+        }
+        .cir2{
+            border: 15px solid yellow;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 250px;
+            left: 570px;
+            
+        }
+        .cir3{
+            border: 15px solid black;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 150px;
+            left: 690px;
+        }
+        .cir4{
+            border: 15px solid green;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 250px;
+            left: 810px;
+            
+        }
+        .cir5{
+            border: 15px solid red;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 150px;
+            left: 930px;
+        }
+        .btn{
+            position: absolute;
+            top: 550px;
+            left: 758px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 20px;
+
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: bisque;
+        }
+
+        #temp{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="temp">
+            <div class="cir1"></div>
+            <div class="cir2"></div>
+            <div class="cir3"></div>
+            <div class="cir4"></div>
+            <div class="cir5"></div>
+
+        </div>
+        <button class="btn" onclick="show()">Click to Show</button>
+    </div>
+    <script>
+        function show(){
+            document.getElementById("temp").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>
